@@ -15,7 +15,7 @@ The Body style
  
 body{
 background-color: #000000;
-background-image: url('imgs/bg1.jpg');
+background-image: url('bg1.jpg');
 opacity: .9;
 background-position: center ;
 background-size: cover;
