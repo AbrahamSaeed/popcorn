@@ -1,0 +1,97 @@
+
+/*=================
+The Global style
+=================*/
+ 
+*{
+    border: 5px solid black;
+    margin:0; 
+    padding: 0;
+}
+
+/*============
+The Body style
+============*/
+ 
+body{
+background-color: #000000;
+background-image: url('imgs/bg1.jpg');
+opacity: .9;
+background-position: center ;
+background-size: cover;
+background-repeat: no-repeat; 
+height: 200vh;
+width: 100vw;
+}
+.parent{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+/*=====================
+The Header-Navbar style
+=====================*/
+ 
+.the-header { 
+  grid-area: 2 / 1 / 10 / 2;
+}
+.nav-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    background-color: #2f1d58;
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    background-color: black;
+} 
+a{
+  text-decoration: none;
+}
+.item {
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 100%;
+    align-self: auto;
+    order: 0;
+ 
+  }
+  
+
+/*============
+The Main style
+============*/
+ 
+.the-main {
+     grid-area: 2 / 2 / 10 / 10; 
+}
+ 
+/*====================
+The Current time style
+====================*/
+ 
+.current-time { 
+    grid-area: 1 / 2 / 2 / 5; 
+}
+ 
+/*=================
+The Langauges style
+=================*/
+ 
+.langauges {
+    grid-area: 5 / 10 / 7 / 11; 
+}
+ 
+/*==============
+The Footer style
+==============*/
+ 
+.the-footer { 
+    grid-area: 10 / 2 / 11 / 10; 
+}
